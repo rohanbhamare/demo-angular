@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/mediaDb",{useNewUrlParser:true,useUnifiedTopology:true},
+
+mongoose.connect("mongodb+srv://rohanbhamare:180888@clusterdemo.le7bc.mongodb.net/mediaDb?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true},
                 ()=>console.log("mongoDb connection succeded."));
 
 module.exports = mongoose; 
