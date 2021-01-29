@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 
 import { LoginComponent } from './login/login.component';
 import { AuthRoutingModule } from './auth-routing.module';
@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { AuthenticationService } from './authentication.service';
 import { from } from 'rxjs';
 import { SignupComponent } from './signup/signup.component';
+import { AuthGuard } from './auth.guard';
+import { AuthInterceptor } from './auth.interceptor';
 
 @NgModule({
   declarations: [LoginComponent, SignupComponent],
@@ -26,7 +28,9 @@ import { SignupComponent } from './signup/signup.component';
     HttpClientModule
   ],
   providers:[
-    AuthenticationService
+    AuthenticationService,
+    AuthGuard,
+    {provide:HTTP_INTERCEPTORS,useClass:AuthInterceptor,multi:true}
   ]
 })
 export class AuthModule { }

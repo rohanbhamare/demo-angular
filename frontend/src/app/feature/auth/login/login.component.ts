@@ -18,7 +18,8 @@ export class LoginComponent implements OnInit {
 
   login(){
     this.authService.login(this.name,this.pass)
-    .subscribe((user)=>{
+    .subscribe((result)=>{
+      this.authService.setToken(result['token']);
       this.route.navigate(["/home"])
     })
     
