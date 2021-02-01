@@ -14,6 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({origin: "http://localhost:4200"}));
 app.use(passport.initialize());
+app.use(passport.session());
 app.use('/categories', Categories);
 app.use('/users', Users);
 

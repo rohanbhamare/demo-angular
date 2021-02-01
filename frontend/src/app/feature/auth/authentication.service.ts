@@ -50,6 +50,7 @@ export class AuthenticationService {
 
   isLoggedIn(){
     var userPayload = this.getUserPayload();
+    console.log(">>>>>>>>>>>>>>>> userPayload : "+userPayload)
     if(userPayload) return userPayload.exp > Date.now() / 1000;
     else return false
   }
