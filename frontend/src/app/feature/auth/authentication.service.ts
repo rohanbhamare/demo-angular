@@ -19,6 +19,11 @@ export class AuthenticationService {
     return this.http.post(apiUrl,obj,this.noAuthHeader);
   }
 
+  logout(){
+    let apiUrl = "http://localhost:3000/users/logout";
+    return this.http.get(apiUrl,this.noAuthHeader);
+  }
+
   signup(name:string,pass:string){
     let apiUrl = "http://localhost:3000/users/signup";
     let obj = new User();

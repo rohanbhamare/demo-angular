@@ -59,4 +59,9 @@ router.post('/login', (req,res)=>{
     // })
 });
 
+router.get('/logout', function(req, res){
+    req.logout();
+   return res.status(200).json({"loggedout": true});
+  });
+
 module.exports = router;
