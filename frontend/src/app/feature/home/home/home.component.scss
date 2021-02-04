@@ -1,0 +1,242 @@
+/* Scss Document */ 
+@import '../../../../styles.scss';
+
+.section.entertainment {	    	 
+    background: linear-gradient(0deg, #5c3953, #8c3750);
+    
+    .container { width:90%; }
+    .container.media {position:relative; 
+    
+        
+    
+    }
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+        .entertainment-title {  font-size:2rem; float:left; color:#ffffff;font-weight:700; 
+            @include mobile-p { padding:15px 0px 0 0;width:100%;font-size:1.25rem; }
+            @include mobile-l { padding:15px 0px 0 0;width:100%;font-size:1.25rem; }
+            @include tablet-l { padding:30px 0px 0 0;width:100%;font-size:1.5rem; }
+            @include tablet-p { padding:30px 0px 0 0;width:100%;font-size:1.5rem; }
+            @include desktop  { padding:30px 0px 0 0;width:100%;font-size:2rem;   }
+            
+    
+    
+        }
+    
+        .sub-category {  margin: 0;  padding: 0;  font-weight:100;  font-size:$main-link; float: left;
+        
+            @include mobile-p {width:100%; font-size:0.915rem;}
+            @include mobile-l {width:100%; font-size:0.915rem;}
+            @include tablet-l {width:100%; font-size:0.975rem; }
+            @include tablet-p {width:100%; font-size:0.975rem; }
+            @include desktop  { width:100%;font-size:1.3rem;   }
+            
+            .swiper-container {overflow:visible;}
+            
+            .swiper-slide {width:max-content !important;text-transform: uppercase;}
+            
+            .swiper-pagination { display:none !important;}
+            
+    
+            
+            a{border-bottom:4px solid transparent ; float: left;  margin:15px 30px;  text-decoration: none; height:100%;color:#ffffff; white-space:nowrap; -webkit-transition: all 0.3s;  transition: all 0.3s; position:relative; cursor:pointer;
+            @include mobile-p {line-height:25px;margin:7px 30px;border-bottom:2px solid transparent ;}
+            @include mobile-l {line-height:25px;margin:7px 30px;border-bottom:2px solid transparent ;}
+            @include tablet-l {line-height:40px;margin:15px 30px;border-bottom:4px solid transparent ;}
+            @include tablet-p {line-height:40px;margin:15px 30px;border-bottom:4px solid transparent ;}
+            @include desktop  {line-height:40px;margin:15px 30px;border-bottom:4px solid transparent ;}
+            
+            }
+    
+            a.selected { border-color:#ffffff ;   font-weight: 400;}
+            a:hover {color:#0096ff;}
+            
+            
+            a:nth-child(1) {margin:15px 30px 15px 0px;
+            
+            @include mobile-p {margin:7px 30px 7px 0px;}
+            @include mobile-l {margin:7px 30px 7px 0px;}
+            @include tablet-l {margin:15px 30px 15px 0px;}
+            @include tablet-p {margin:15px 30px 15px 0px;}
+            @include desktop  {margin:15px 30px 15px 0px;}
+            
+            }
+            a::after {content: ""; width:7px; height:7px; background:#ffffff; opacity:0.6;position: absolute;    right: -30px;    top: calc(50% - 3.5px);}
+            a:last-child::after {content: none;}
+        
+        }
+        
+        
+        .promo-area { float:left; height:auto; padding:0 0 20px 0; position:relative;
+        
+    @include mobile-p {width:110%; margin-left:-5%;}
+    @include mobile-l {width:100%; margin-left:0;}
+    @include tablet-l {width:calc(100% + 48px); margin-left:-24px;}
+    @include tablet-p {width:calc(100% + 48px); margin-left:-24px;}
+    @include desktop {width:calc(100% + 48px); margin-left:-24px;}
+    
+    
+    .swiper-container { overflow:visible; }
+    .swiper-pagination {    bottom: 30px !important;
+    
+            @include mobile-p {bottom: 10px !important;}
+            @include mobile-l {bottom: 10px !important;}
+            @include tablet-l {bottom: 20px !important;}
+            @include tablet-p {bottom: 20px !important;}
+            @include desktop  {bottom: 30px !important;}
+    
+    
+    
+    }
+        
+        
+        .promo { float:left;
+            .promo-img { float:left; width:100%; height:auto;-webkit-transition: all 0.3s;  transition: all 0.3s;cursor: pointer;}
+            
+            
+            
+            @include mobile-p {margin:0px; width:calc(100% - 0px);}
+            @include mobile-l {margin:5px 0; width:calc(70% - 0px);}
+            @include tablet-l {margin:0px 0; width:calc(70% - 0px);}
+            @include tablet-p {margin:0px 0; width:calc(70% - 0px);}
+            @include desktop  {margin:0px 0; width:calc(70% - 0px);}
+            
+        }
+        .promo:hover {	.promo-img {opacity:0.5;}	}
+        }
+    
+    .promo-divider { float:left; width:100%; height:1px; background:#ffffff; opacity:0.5;}
+    
+    .search-divider { float:left; width:100%; height:1px; background:#ffffff; opacity:0.5; margin:1rem 0;}
+    
+    .promo-area.search {  
+            @include mobile-p {width:110%; margin-left:-5%;}
+            @include mobile-l {width:100%; margin-left:0;}
+            @include tablet-l {width:calc(100% + 24px); margin-left:-12px;}
+            @include tablet-p {width:calc(100% + 24px); margin-left:-12px;}
+            @include desktop {width:calc(100% + 24px); margin-left:-12px;}
+        
+        }
+        
+    .movies-search, .music-search {  height:114px; -webkit-transition: all 0.3s;  transition: all 0.3s;  position:relative; margin-bottom:20px;
+    .img-search  { float:left; height:100%;}
+    .play-search { position:absolute;  top:50%; margin-top:-25px; width:50px; height:50px; z-index:2;}
+    .text-search {float:left;height:calc(100% - 20px); background:#ffffff; overflow:hidden; display: grid;   place-content: baseline;
+        align-content: center; padding:10px 0;
+    
+    p { float:left;  width:calc(100% - 40px); color:#000000; font-weight:300; font-size:1.3rem; overflow:hidden;
+         margin:0; max-height:calc(100% - 0px);
+      
+            @include mobile-p {width:calc(100% - 30px); padding:0px 15px;font-size:0.985rem;}
+            @include mobile-l {width:calc(100% - 30px); padding:0px 15px;font-size:0.985rem;}
+            @include tablet-l {width:calc(100% - 40px); padding:0px 20px;font-size:1.3rem;}
+            @include tablet-p {width:calc(100% - 40px); padding:0px 20px;font-size:1.3rem;}
+            @include desktop  {width:calc(100% - 40px); padding:0px 20px;font-size:1.2rem;}
+    
+    }
+    }
+    
+            @include mobile-p {margin-bottom:10px;}
+            @include mobile-l {margin-bottom:10px;}
+            @include tablet-l {margin-bottom:20px;}
+            @include tablet-p {margin-bottom:20px;}
+            @include desktop  {margin-bottom:20px;}
+    
+    }
+    
+    .movies-search {
+    .play-search {left:13px;}
+    .img-search {width:77px; }
+    .text-search { width:calc(100% - 97px); 
+    
+    
+            @include mobile-p { p:nth-child(1) {line-height: 1.2;}}
+            @include mobile-l { p:nth-child(1) {line-height: 1.2;}}
+            @include tablet-l { p:nth-child(1) {line-height: 1.2;}}
+            @include tablet-p { p:nth-child(1) {line-height: 1.2;}}
+            @include desktop  { p:nth-child(1) {line-height: 23px;}}
+    
+            @include mobile-p {width:calc(100% - 77px);}
+            @include mobile-l {width:calc(100% - 87px);}
+            @include tablet-l {width:calc(100% - 97px);}
+            @include tablet-p {width:calc(100% - 97px);}
+            @include desktop  {width:calc(100% - 97px);}
+            p:nth-child(2) {display:none;}
+    
+    
+    }
+    
+    }
+    
+    
+    
+    
+    .music-search { 
+    .play-search {left:32px;}
+    .img-search {  width:114px; }
+    
+    .text-search { width:calc(100% - 134px); 
+    
+            @include mobile-p { p:nth-child(1) {line-height: 1.01;}}
+            @include mobile-l { p:nth-child(1) {line-height: 1.01;}}
+            @include tablet-l { p:nth-child(1) {line-height: 1.2;}}
+            @include tablet-p { p:nth-child(1) {line-height: 1.2;}}
+            @include desktop  { p:nth-child(1) {line-height: 23px;}}
+    
+            @include mobile-p {width:calc(100% - 114px); p:nth-child(2) { font-size:0.937rem; line-height: 1.05;}}
+            @include mobile-l {width:calc(100% - 124px); p:nth-child(2) { font-size:0.937rem; line-height: 1.05;}}
+            @include tablet-l {width:calc(100% - 134px); p:nth-child(2) { font-size:1.2rem;line-height: 1.05;}}
+            @include tablet-p {width:calc(100% - 134px); p:nth-child(2) { font-size:1.2rem;line-height: 1.05;}}
+            @include desktop  {width:calc(100% - 134px); p:nth-child(2) { font-size:0.9rem; line-height: 1.15;}}
+            
+         p:nth-child(2) { opacity:0.7; }	
+    
+    
+    }
+    
+    
+    
+    }
+    
+    
+    
+    .list-movies { float:left; cursor: pointer; height:auto;
+            .movies-img { float:left; width:100%; height:auto;-webkit-transition: all 0.3s;  transition: all 0.3s;}
+            .posterlist-title {color:#ffffff;float:left; width:100%; font-size:$link; overflow:hidden; height:calc(1.2rem * 2.5); font-weight:300; margin:5px 0 15px 0;
+            
+            @include mobile-p {font-size:0.95rem;}
+            @include mobile-l {font-size:0.95rem;}
+            @include tablet-l {font-size:1.25rem;}
+            @include tablet-p {font-size:1.25rem;}
+            @include desktop  {font-size:1.3rem;}
+            
+            
+            }
+            
+            
+            @include mobile-p {margin:15px; width:calc(50% - 30px);}
+            @include mobile-l {margin:15px; width:calc(25% - 30px);}
+            @include tablet-l {margin:15px; width:calc(20% - 30px);}
+            @include tablet-p {margin:15px; width:calc(25% - 30px);}
+            @include desktop  {margin:15px; width:calc(16.66% - 30px);}
+            
+        }
+        
+    .one-media { width:100%; height:auto; float:left; 
+            @include mobile-p { margin-top:15px;}
+            @include mobile-l { margin-top:15px;}
+            @include tablet-l { margin-top:30px;}
+            @include tablet-p { margin-top:30px;}
+            @include desktop  { margin-top:30px;}
+    }	
+    
+    
+    .swiper-pagination-bullet { opacity:1 !important;   background: rgba(130,130,130,0.6) !important; border:1px solid rgba(0,0,0,0.5) !important;}
+    .swiper-pagination-bullet-active-main, .swiper-pagination-bullet-active {background: rgba(255,255,255,1) !important; border:1px solid rgba(0,0,0,0.5) !important;}
